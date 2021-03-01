@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Movies Index</string>
-    <string name="title_activity_movies_info">Movies Index</string>
+    <string name="app_name">Movieslogue</string>
+    <string name="title_activity_movies_info">Movieslogue</string>
     <string name="favourite_movies">Favourite Movies</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="title_activity_main">Movies Index</string>
+    <string name="title_activity_main">Movieslogue</string>
     <string name="popular_movies">Popular Movies</string>
     <string name="made_with_love">Made with</string>
     <string name="in_india">in</string>
     <string name="categories">Categories</string>
-    <string name="movies_index">Movies Index</string>
+    <string name="movies_index">Movieslogue</string>
     <string name="top_rated_movies">Top Rated Movies</string>
     <string name="upcoming_movies">Upcoming Movies</string>
     <string name="now_playing">Now Playing</string>
@@ -20,10 +20,20 @@
     <string name="sort_by_popularity">Sort By Popularity</string>
     <string name="sort_by_rating">Sort By Rating</string>
     <string name="play_dumb_charades">Play Dumb Charades</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
+    <string name="official_teaser_trailer">Official Teaser Trailer</string>
+    <string name="play_icon">Play Icon</string>
+    <string name="trailer_of_the_movie">Trailer Of the movie</string>
+    <string name="movie_review">Review</string>
+    <string name="youtube_url">https://www.youtube.com/watch?v=</string>
+    <string name="no_available_reviews">No Available Reviews</string>
+    <string name="no_available_trailers">No Available Trailers</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="thumbnail_firstPart">https://i1.ytimg.com/vi/</string>
+    <string name="thumbnail_secondPart">/hqdefault.jpg</string>
+    <string name="videos">Trailers:</string>
+    <string name="see_all">See All</string>
+    <string name="see_all_trailers">See All Trailers</string>
 </resources>
 
 

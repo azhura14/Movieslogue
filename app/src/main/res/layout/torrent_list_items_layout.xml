@@ -10,7 +10,7 @@
             type="android.text.SpannableStringBuilder" />
         <variable
             name="torrent"
-            type="com.sg.moviesindex.model.yts.Torrent">
+            type="com.azhura.movielogue.model.yts.Torrent">
         </variable>
     </data>
 

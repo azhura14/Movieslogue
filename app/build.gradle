@@ -1,16 +1,11 @@
 apply plugin: 'com.android.application'
 
 
-def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file('key.properties')
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-}
 
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.sg.moviesindex"
+        applicationId "com.azhura.movieslogue"
         minSdkVersion 21
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
@@ -29,24 +24,16 @@ android {
     sourceSets {
         androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
     }
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
-        }
-    }
+
     buildTypes {
         debug {
-            buildConfigField "String", "ApiKey", TMDB_API_KEY
+            buildConfigField "String", "ApiKey", "\"1f6b47d2ecfa11d8a51af411d88c1600\""
         }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro -keep class android.support.v7.widget.SearchView { *; }\n' +
-                    ''
-            buildConfigField "String", "ApiKey", TMDB_API_KEY
-            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "ApiKey", "\"1f6b47d2ecfa11d8a51af411d88c1600\""
+//            signingConfig signingConfigs.release
         }
     }
     buildFeatures {

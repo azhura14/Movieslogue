@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sg.moviesindex">
+    package="com.azhura.movielogue">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- For saving downloaded file to the external storage -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- For opening downloaded file from the external storage -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- For saving downloaded file to the external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- For opening downloaded file from the external storage -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
 
     <application
         android:allowBackup="true"
@@ -19,6 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.azhura.movielogue.view.SeeAllActivity"></activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -30,7 +29,7 @@
         </provider>
 
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.azhura.movielogue.view.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -40,15 +39,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.MoviesInfo"
+            android:name="com.azhura.movielogue.view.MoviesInfo"
             android:label="@string/title_activity_movies_info"
             android:theme="@style/AppTheme" />
 
-        <service android:name=".service.TorrentDownloaderService" />
+        <service android:name="com.azhura.movielogue.service.TorrentDownloaderService" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>
