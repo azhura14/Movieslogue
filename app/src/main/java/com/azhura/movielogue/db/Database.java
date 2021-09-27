@@ -19,6 +19,8 @@ public abstract class Database extends RoomDatabase {
     public abstract FavouriteMoviesDAO getFDAO();
 
     private static Database instance;
+    
+    private static Database instance1;
 
     public static synchronized Database getInstance(Context context) {
         if (instance == null) {
